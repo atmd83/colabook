@@ -1,0 +1,14 @@
+{
+  "name": "colabook",
+  "version": "1.0.0",
+  "description": "Booking system for world Cola day",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "concurrently 'yarn api:dev' 'yarn ui:dev'",
+    "rollback": "nodemon -r dotenv/config server.js",
+    "seed": "cd ui && react-scripts start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
